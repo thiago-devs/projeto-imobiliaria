@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImobiLar</title>
+    <link rel="stylesheet" href="/style/indexImovel.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Casa</h1>
+        <p>Preencha o formulário abaixo para cadastrar uma casa.</p>
+    </header>
+
+    <main>
+        <section id="pai">
+            <form action="#">
+                <section class="container-box">
+                    <input type="number" name="quarto" id="quarto" class="inputUser" required>
+                    <label for="quarto" class="labelInput">Número de Quartos:</label>
+                </section>
+                <br>
+                <section class="container-box">
+                    <input type="text" name="valor" id="valor" class="inputUser" required>
+                    <label for="valor" class="labelInput">Valor:</label>
+                </section>
+                <br>
+                <section class="container-box">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço:</label>
+                </section>
+                <br>
+                <section class="container-box">
+                    <p id="p-option">Possui Quintal ?</p>
+                    <input type="radio" name="quintal" id="sim" checked>
+                    <label class="radio-option" for="sim">Sim</label>
+                    <br>
+                    <input type="radio" name="quintal" id="nao">
+                    <label class="radio-option" for="nao">Não</label>
+                </section>
+
+                <input type="submit" value="Cadastrar" id="botao">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

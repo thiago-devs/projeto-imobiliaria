@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans';
+}
+
+:root {
+    --azul-imobiliaria: #011936;
+    --branco-imobiliaria: #F4FFFD;
+    --vermelho-imobiliaria: #800E13;
+}
+
+body {
+    background-color: var(--azul-imobiliaria);
+    
+}
+
+header {
+    background-color: #800E13;
+    padding: 30px;
+    text-align: center;
+    color: var(--branco-imobiliaria);
+}
+
+#pai {
+    background-color: var(--branco-imobiliaria);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container-box {
+    position: relative;
+    margin: 5px;
+}
+
+.inputUser {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--azul-imobiliaria);
+    outline: none;
+    font-size: 1em;
+    letter-spacing: 1.5px; 
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    color: var(--azul-imobiliaria);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.inputUser:focus ~.labelInput, .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--vermelho-imobiliaria);
+}
+
+#p-option, .radio-option {
+    color: var(--azul-imobiliaria);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#botao, #botao2 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 15px;
+    width: 60%;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--vermelho-imobiliaria);
+    text-transform: uppercase;
+    color: var(--branco-imobiliaria);
+    cursor: pointer;
+    transition: .6s;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+#botao2 {
+    margin-top: 10px;
+}
+
+#botao:hover {
+    background-color: #a4121a;
+}
