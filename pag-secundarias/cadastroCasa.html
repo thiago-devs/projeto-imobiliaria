@@ -15,10 +15,10 @@
 
     <main>
         <section id="pai">
-            <form action="#">
+            <form action="../cadastrarImovel.php" method="POST">
                 <section class="container-box">
-                    <input type="number" name="quarto" id="quarto" class="inputUser" required>
-                    <label for="quarto" class="labelInput">Número de Quartos:</label>
+                    <input type="number" name="quartos" id="quartos" class="inputUser" required>
+                    <label for="quartos" class="labelInput">Número de Quartos:</label>
                 </section>
                 <br>
                 <section class="container-box">
@@ -33,16 +33,16 @@
                 <br>
                 <section class="container-box">
                     <p id="p-option">Possui Quintal ?</p>
-                    <input type="radio" name="quintal" id="sim" checked>
+                    <input type="radio" name="quintal" id="sim" value="true" checked>
                     <label class="radio-option" for="sim">Sim</label>
                     <br>
-                    <input type="radio" name="quintal" id="nao">
+                    <input type="radio" name="quintal" id="nao" value="false">
                     <label class="radio-option" for="nao">Não</label>
                 </section>
 
                 <input type="submit" value="Cadastrar" id="botao">
             </form>
-            <button><a href="../index.html">Voltar</a></button>
+            <a href="../index.html"><button>Voltar</button></a>
         </section>
     </main>
 </body>
