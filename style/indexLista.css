@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans';
+}
+
+:root {
+    --azul-imobiliaria: #011936;
+    --branco-imobiliaria: #F4FFFD;
+    --vermelho-imobiliaria: #800E13;
+}
+
+body {
+    background-color: var(--azul-imobiliaria);
+    
+}
+
+header {
+    background-color: #800E13;
+    padding: 20px;
+    text-align: center;
+    color: var(--branco-imobiliaria);
+}
+
+.container-card-casa, .container-card-apartamento {
+    background-color: var(--branco-imobiliaria);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    padding: 20px 0px;
+}
+
+h2 {
+    color: #b1131b;
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--azul-imobiliaria);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 6px;
+    color: var(--branco-imobiliaria);
+}
+
+input {
+    width: 60px;
+    background: none;
+    border: none;
+    border-bottom: 1.5px solid #F4FFFD;
+    outline: none;
+    color: var(--branco-imobiliaria);
+    font-weight: bold;
+}
+
+.enderecoInput {
+    width: 180px;
+}
+
+button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 15px;
+    padding: 8px;
+    width: 40%;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--vermelho-imobiliaria);
+    cursor: pointer;
+    transition: .6s;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--branco-imobiliaria);
+}
+
+button:hover {
+    background-color: #a4121a;
+}
